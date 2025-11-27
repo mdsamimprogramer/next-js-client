@@ -1,233 +1,35 @@
-[00:00:00.916] Server  ERROR   (node:1992) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Projects/my-first-next-js/next.config.js is not specified and it doesn't parse as CommonJS.
+[00:00:00.758] Server  ERROR   (node:6852) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///C:/Projects/my-first-next-js/next.config.js is not specified and it doesn't parse as CommonJS.
 Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
 To eliminate this warning, add "type": "module" to C:\Projects\my-first-next-js\package.json.
 (Use `node --trace-warnings ...` to show where the warning was created)
-[00:00:02.199] Server  LOG      ✓ Ready in 1794ms
-[00:00:05.220] Server  LOG      ○ Compiling / ...
-[00:00:08.704] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:18.634] Browser WARN    Image with src "http://localhost:3000/avater%20(3).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:18.634] Browser WARN    Image with src "http://localhost:3000/avater%20(4).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:18.634] Browser WARN    Image with src "http://localhost:3000/avater%20(2).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:19.746] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:20.863] Browser WARN    Image with src "http://localhost:3000/avater%20(3).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:20.863] Browser WARN    Image with src "http://localhost:3000/avater%20(2).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:20.863] Browser WARN    Image with src "http://localhost:3000/avater%20(4).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:55.806] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:03:56.641] Browser WARN    Image with src "http://localhost:3000/avater%20(3).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:56.641] Browser WARN    Image with src "http://localhost:3000/avater%20(2).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:03:56.641] Browser WARN    Image with src "http://localhost:3000/avater%20(4).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:04:02.098] Server  ERROR   (node:1992) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
-[00:50:01.090] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:50:01.418] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <ScrollAndFocusHandler segmentPath={[...]}>
-      <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
-        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
-          <LoadingBoundary name="login/" loading={null}>
-            <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <InnerLayoutRouter url="/auth/login" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
-                    <SegmentViewNode type="page" pagePath="auth/login...">
-                      <SegmentTrieNode>
-                      <ClientPageRoot Component={function LoginPage} serverProvidedParams={{...}}>
-                        <LoginPage params={Promise} searchParams={Promise}>
-                          <div className="min-h-scre...">
-                            <div className="bg-white p...">
-                              <h2>
-                              <form onSubmit={function handleSubmit} className="space-y-4">
-                                <input
-                                  type="email"
-                                  placeholder="Email"
-                                  value=""
-                                  onChange={function onChange}
-                                  required={true}
-                                  className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:..."
--                                 fdprocessedid="y7g10o"
-                                >
-                                <input
-                                  type="password"
-                                  placeholder="Password"
-                                  value=""
-                                  onChange={function onChange}
-                                  required={true}
-                                  className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:..."
--                                 fdprocessedid="clrg1u"
-                                >
-                                <button
-                                  type="submit"
-                                  className="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700 transition"
--                                 fdprocessedid="81he2f"
-                                >
-+                                 Login with Email
-                              <div>
-                              <button
-                                onClick={function onClick}
-                                className="w-full flex items-center justify-center gap-2 bg-red-500 hover:bg-red-600 t..."
--                               fdprocessedid="dv6a9h"
-                              >
-                    ...
-                  ...
-        ...
-
-[00:50:04.393] Browser WARN    Image with src "http://localhost:3000/avater%20(3).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:50:04.393] Browser WARN    Image with src "http://localhost:3000/avater%20(4).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:50:04.917] Browser WARN    Image with src "http://localhost:3000/avater%20(2).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:55:02.476] Server  LOG        Reload env: .env.local
-[00:55:03.912] Server  LOG        Reload env: .env.local
-[00:55:15.413] Server  LOG        Reload env: .env.local
-[00:55:47.491] Server  LOG        Reload env: .env.local
-[00:56:59.721] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:57:00.699] Browser WARN    Image with src "http://localhost:3000/avater%20(3).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:57:00.699] Browser WARN    Image with src "http://localhost:3000/avater%20(2).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:57:00.699] Browser WARN    Image with src "http://localhost:3000/avater%20(4).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:58:32.445] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:58:32.681] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <ScrollAndFocusHandler segmentPath={[...]}>
-      <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
-        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
-          <LoadingBoundary name="login/" loading={null}>
-            <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <InnerLayoutRouter url="/auth/login" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
-                    <SegmentViewNode type="page" pagePath="auth/login...">
-                      <SegmentTrieNode>
-                      <ClientPageRoot Component={function LoginPage} serverProvidedParams={{...}}>
-                        <LoginPage params={Promise} searchParams={Promise}>
-                          <div className="min-h-scre...">
-                            <div className="bg-white p...">
-                              <h2>
-                              <form onSubmit={function handleSubmit} className="space-y-4">
-                                <input
-                                  type="email"
-                                  placeholder="Email"
-                                  value=""
-                                  onChange={function onChange}
-                                  required={true}
-                                  className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:..."
--                                 fdprocessedid="3poi0r"
-                                >
-                                <input
-                                  type="password"
-                                  placeholder="Password"
-                                  value=""
-                                  onChange={function onChange}
-                                  required={true}
-                                  className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:..."
--                                 fdprocessedid="562oqrp"
-                                >
-                                <button
-                                  type="submit"
-                                  className="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700 transition"
--                                 fdprocessedid="w7af56"
-                                >
-+                                 Login with Email
-                              <div>
-                              <button
-                                onClick={function onClick}
-                                className="w-full flex items-center justify-center gap-2 bg-red-500 hover:bg-red-600 t..."
--                               fdprocessedid="fwdgz4"
-                              >
-                    ...
-                  ...
-        ...
-
-[00:58:35.377] Browser WARN    Image with src "http://localhost:3000/avater%20(3).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:58:35.377] Browser WARN    Image with src "http://localhost:3000/avater%20(4).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:58:35.874] Browser WARN    Image with src "http://localhost:3000/avater%20(2).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:01:19.386] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:01:20.563] Browser WARN    Image with src "http://localhost:3000/avater%20(3).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:01:20.563] Browser WARN    Image with src "http://localhost:3000/avater%20(2).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:01:20.563] Browser WARN    Image with src "http://localhost:3000/avater%20(4).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:03:38.939] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:03:39.488] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
-
-- A server/client branch `if (typeof window !== 'undefined')`.
-- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
-- Date formatting in a user's locale which doesn't match the server.
-- External changing data without sending a snapshot of it along with the HTML.
-- Invalid HTML tag nesting.
-
-It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
-
-%s%s https://react.dev/link/hydration-mismatch 
-
-  ...
-    <ScrollAndFocusHandler segmentPath={[...]}>
-      <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
-        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
-          <LoadingBoundary name="login/" loading={null}>
-            <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
-              <RedirectBoundary>
-                <RedirectErrorBoundary router={{...}}>
-                  <InnerLayoutRouter url="/auth/login" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} ...>
-                    <SegmentViewNode type="page" pagePath="auth/login...">
-                      <SegmentTrieNode>
-                      <ClientPageRoot Component={function LoginPage} serverProvidedParams={{...}}>
-                        <LoginPage params={Promise} searchParams={Promise}>
-                          <div className="min-h-scre...">
-                            <div className="bg-white p...">
-                              <h2>
-                              <form onSubmit={function handleSubmit} className="space-y-4">
-                                <input
-                                  type="email"
-                                  placeholder="Email"
-                                  value=""
-                                  onChange={function onChange}
-                                  required={true}
-                                  className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:..."
--                                 fdprocessedid="mbheon"
-                                >
-                                <input
-                                  type="password"
-                                  placeholder="Password"
-                                  value=""
-                                  onChange={function onChange}
-                                  required={true}
-                                  className="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:..."
--                                 fdprocessedid="oq4ovs"
-                                >
-                                <button
-                                  type="submit"
-                                  className="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700 transition"
--                                 fdprocessedid="fs2gz"
-                                >
-+                                 Login with Email
-                              <div>
-                              <button
-                                onClick={function onClick}
-                                className="w-full flex items-center justify-center gap-2 bg-red-500 hover:bg-red-600 t..."
--                               fdprocessedid="4xs7x"
-                              >
-                    ...
-                  ...
-        ...
-
-[01:04:11.162] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:04:12.547] Browser WARN    Image with src "http://localhost:3000/avater%20(3).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:04:12.547] Browser WARN    Image with src "http://localhost:3000/avater%20(2).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[01:04:12.547] Browser WARN    Image with src "http://localhost:3000/avater%20(4).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:01.395] Server  LOG      ✓ Ready in 1078ms
+[00:00:04.917] Server  LOG      ○ Compiling / ...
+[00:00:08.256] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:09.331] Browser WARN    Image with src "http://localhost:3000/avater%20(3).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:09.331] Browser WARN    Image with src "http://localhost:3000/avater%20(2).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:09.331] Browser WARN    Image with src "http://localhost:3000/avater%20(4).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:33.980] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:35.102] Browser WARN    Image with src "http://localhost:3000/avater%20(3).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:35.103] Browser WARN    Image with src "http://localhost:3000/avater%20(2).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:35.103] Browser WARN    Image with src "http://localhost:3000/avater%20(4).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:38.202] Server  ERROR   (node:6852) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+[00:00:40.408] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:41.386] Browser WARN    Image with src "http://localhost:3000/avater%20(3).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:41.386] Browser WARN    Image with src "http://localhost:3000/avater%20(2).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:41.386] Browser WARN    Image with src "http://localhost:3000/avater%20(4).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:43.676] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:44.770] Browser WARN    Image with src "http://localhost:3000/avater%20(3).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:44.770] Browser WARN    Image with src "http://localhost:3000/avater%20(2).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:44.770] Browser WARN    Image with src "http://localhost:3000/avater%20(4).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:51.098] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:52.017] Browser WARN    Image with src "http://localhost:3000/avater%20(3).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:52.017] Browser WARN    Image with src "http://localhost:3000/avater%20(2).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:52.017] Browser WARN    Image with src "http://localhost:3000/avater%20(4).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:53.002] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:54.161] Browser WARN    Image with src "http://localhost:3000/avater%20(3).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:54.161] Browser WARN    Image with src "http://localhost:3000/avater%20(2).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:54.161] Browser WARN    Image with src "http://localhost:3000/avater%20(4).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:01.387] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:02.480] Browser WARN    Image with src "http://localhost:3000/avater%20(3).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:02.480] Browser WARN    Image with src "http://localhost:3000/avater%20(2).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:02.480] Browser WARN    Image with src "http://localhost:3000/avater%20(4).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
