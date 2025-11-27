@@ -1,87 +1,10 @@
-[00:00:01.634] Server  LOG      ✓ Ready in 1231ms
-[00:00:07.126] Server  LOG      ○ Compiling / ...
-[00:00:08.798] Server  WARN     ⚠ The "images.domains" configuration is deprecated. Please use "images.remotePatterns" configuration instead.
-[00:00:09.085] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:09.266] Browser WARN    Image with src "/avater (3).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:09.266] Browser WARN    Image with src "/avater (2).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:00:09.267] Browser WARN    Image with src "/avater (4).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
-[00:02:37.500] Server  LOG      ✓ Compiled in 152ms
-[00:02:37.722] Browser ERROR   ./src/app/globals.css
-Error evaluating Node.js code
-Error: Failed to load chunk chunks/[root-of-the-server]__51225daf._.js from module [turbopack-node]/transforms/postcss.ts { CONFIG => "[project]/postcss.config.mjs [postcss] (ecmascript)" } [postcss] (ecmascript, async loader)
-    [at Context.loadChunkAsync (turbopack:///[turbopack]/nodejs/runtime.ts:141:9)]
-    [at C:\Projects\my-first-next-js\.next\dev\build\chunks\[turbopack-node]_transforms_postcss_ts_7180740f._.js:8:40]
-    [at <anonymous>]
-    [at C:\Projects\my-first-next-js\.next\dev\build\chunks\[turbopack-node]_transforms_postcss_ts_7180740f._.js:8:3]
-    [at Context.asyncLoader (turbopack:///[turbopack]/shared/runtime-utils.ts:369:10)]
-    [at <anonymous> (turbopack:///[turbopack-node]/ipc/evaluate.ts/evaluate.js:1:36)]
-    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:75:26)]
-    [at module evaluation (turbopack:///[turbopack-node]/ipc/evaluate.ts/evaluate.js:1:35)]
-    [at instantiateModule (turbopack:///[turbopack]/nodejs/runtime.ts:228:5)]
-    [at instantiateRuntimeModule (turbopack:///[turbopack]/nodejs/runtime.ts:271:10)]
-Caused by: SyntaxError: Identifier '{default export}' has already been declared
-    [at C:\Projects\my-first-next-js\.next\dev\build\chunks\[root-of-the-server]__51225daf._.js]
-    [at wrapSafe (node:internal/modules/cjs/loader:1691:18)]
-    [at Module._compile (node:internal/modules/cjs/loader:1734:20)]
-    [at Object..js (node:internal/modules/cjs/loader:1893:10)]
-    [at Module.load (node:internal/modules/cjs/loader:1480:32)]
-    [at Module._load (node:internal/modules/cjs/loader:1299:12)]
-    [at TracingChannel.traceSync (node:diagnostics_channel:328:14)]
-    [at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)]
-    [at Module.require (node:internal/modules/cjs/loader:1503:12)]
-    [at require (node:internal/modules/helpers:152:16)]
-    [at Context.loadChunkAsync (turbopack:///[turbopack]/nodejs/runtime.ts:133:55)]
-
-Import trace:
-  Client Component Browser:
-    ./src/app/globals.css [Client Component Browser]
-    ./src/app/layout.jsx [Server Component]
-[00:02:37.722] Browser ERROR   ./postcss.config.mjs:22:1
-Ecmascript file had an error
-  20 | };
-  21 |
-> 22 | export default nextConfig;
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  23 |
-
-the name `default` is exported multiple times
-[00:02:42.720] Browser ERROR   ./src/app/globals.css
-Error evaluating Node.js code
-Error: Failed to load chunk chunks/[root-of-the-server]__51225daf._.js from module [turbopack-node]/transforms/postcss.ts { CONFIG => "[project]/postcss.config.mjs [postcss] (ecmascript)" } [postcss] (ecmascript, async loader)
-    [at Context.loadChunkAsync (turbopack:///[turbopack]/nodejs/runtime.ts:141:9)]
-    [at C:\Projects\my-first-next-js\.next\dev\build\chunks\[turbopack-node]_transforms_postcss_ts_7180740f._.js:8:40]
-    [at <anonymous>]
-    [at C:\Projects\my-first-next-js\.next\dev\build\chunks\[turbopack-node]_transforms_postcss_ts_7180740f._.js:8:3]
-    [at Context.asyncLoader (turbopack:///[turbopack]/shared/runtime-utils.ts:369:10)]
-    [at <anonymous> (turbopack:///[turbopack-node]/ipc/evaluate.ts/evaluate.js:1:36)]
-    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:75:26)]
-    [at module evaluation (turbopack:///[turbopack-node]/ipc/evaluate.ts/evaluate.js:1:35)]
-    [at instantiateModule (turbopack:///[turbopack]/nodejs/runtime.ts:228:5)]
-    [at instantiateRuntimeModule (turbopack:///[turbopack]/nodejs/runtime.ts:271:10)]
-Caused by: SyntaxError: Identifier '{default export}' has already been declared
-    [at C:\Projects\my-first-next-js\.next\dev\build\chunks\[root-of-the-server]__51225daf._.js]
-    [at wrapSafe (node:internal/modules/cjs/loader:1691:18)]
-    [at Module._compile (node:internal/modules/cjs/loader:1734:20)]
-    [at Object..js (node:internal/modules/cjs/loader:1893:10)]
-    [at Module.load (node:internal/modules/cjs/loader:1480:32)]
-    [at Module._load (node:internal/modules/cjs/loader:1299:12)]
-    [at TracingChannel.traceSync (node:diagnostics_channel:328:14)]
-    [at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)]
-    [at Module.require (node:internal/modules/cjs/loader:1503:12)]
-    [at require (node:internal/modules/helpers:152:16)]
-    [at Context.loadChunkAsync (turbopack:///[turbopack]/nodejs/runtime.ts:133:55)]
-
-Import trace:
-  Client Component Browser:
-    ./src/app/globals.css [Client Component Browser]
-    ./src/app/layout.jsx [Server Component]
-[00:02:42.721] Browser ERROR   ./postcss.config.mjs:18:1
-Ecmascript file had an error
-  16 | };
-  17 |
-> 18 | export default nextConfig;
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  19 |
-
-the name `default` is exported multiple times
-[00:02:46.110] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:01.683] Server  LOG      ✓ Ready in 1197ms
+[00:00:05.333] Server  LOG      ○ Compiling / ...
+[00:00:11.061] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:11.415] Browser WARN    Image with src "/avater (3).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:11.415] Browser WARN    Image with src "/avater (2).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:00:11.415] Browser WARN    Image with src "/avater (4).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:59.506] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:59.829] Browser WARN    Image with src "/avater (3).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:59.829] Browser WARN    Image with src "/avater (2).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:59.829] Browser WARN    Image with src "/avater (4).jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.

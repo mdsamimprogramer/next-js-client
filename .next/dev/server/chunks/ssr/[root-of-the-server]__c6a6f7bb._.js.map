@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///C:/Projects/my-first-next-js/src/app/products/page.jsx"],"sourcesContent":["import React from 'react'\r\n\r\nexport default function ProductsPage() {\r\n  return (\r\n    <div>this is product pages\r\n        <p>product-1</p>\r\n        <p>product-2</p>\r\n        <p>product-3</p>\r\n        <p>product-4</p>\r\n    </div>\r\n  )\r\n}\r\n"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,8OAAC;;YAAI;0BACD,8OAAC;0BAAE;;;;;;0BACH,8OAAC;0BAAE;;;;;;0BACH,8OAAC;0BAAE;;;;;;0BACH,8OAAC;0BAAE;;;;;;;;;;;;AAGX"}}]
-}

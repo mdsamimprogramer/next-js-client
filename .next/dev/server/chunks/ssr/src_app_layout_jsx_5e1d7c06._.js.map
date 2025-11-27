@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["file:///C:/Projects/my-first-next-js/src/app/layout.jsx"],"sourcesContent":["\r\n// import \"../globals.css\";\r\n\r\n// export const metadata = {\r\n//     title: \"Nature's Platter\",\r\n//     description: \"Next.js App with Auth & Products\",\r\n// };\r\n\r\n// export default function RootLayout({ children }) {\r\n//     return (\r\n//         <html lang=\"en\">\r\n//             <body className=\"flex flex-col min-h-screen\">\r\n//                 <Navbar></Navbar>\r\n//                 <main className=\"flex-1\">{children}</main>\r\n//                 <Footer />\r\n//             </body>\r\n//         </html>\r\n//     );\r\n// }\r\n"],"names":[],"mappings":"AACA,2BAA2B;AAE3B,4BAA4B;AAC5B,iCAAiC;AACjC,uDAAuD;AACvD,KAAK;AAEL,qDAAqD;AACrD,eAAe;AACf,2BAA2B;AAC3B,4DAA4D;AAC5D,oCAAoC;AACpC,6DAA6D;AAC7D,6BAA6B;AAC7B,sBAAsB;AACtB,kBAAkB;AAClB,SAAS;AACT,IAAI"}}]
-}

@@ -17,24 +17,11 @@ const mod = __turbopack_context__.x("fs", () => require("fs"));
 
 module.exports = mod;
 }),
-"[project]/postcss.config.mjs [postcss] (ecmascript)", ((__turbopack_context__) => {
-"use strict";
+"[project]/postcss.config.mjs [postcss] (ecmascript)", ((__turbopack_context__, module, exports) => {
 
-/** @type {import('next').NextConfig} */ __turbopack_context__.s([
-    "default",
-    ()=>__TURBOPACK__default__export__
-]);
-const nextConfig = {
-    images: {
-        remotePatterns: [
-            {
-                protocol: 'https',
-                hostname: '**.example.com'
-            }
-        ]
-    }
-};
-const __TURBOPACK__default__export__ = nextConfig;
+const e = new Error("Could not parse module '[project]/postcss.config.mjs', file not found");
+e.code = 'MODULE_UNPARSABLE';
+throw e;
 }),
 "[turbopack-node]/transforms/transforms.ts [postcss] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
