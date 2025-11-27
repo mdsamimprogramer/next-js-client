@@ -136,7 +136,6 @@ const handler = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules
             },
             async authorize (credentials) {
                 if (!credentials.email) throw new Error("Email is required");
-                // ✅ যেকোনো ইমেইল দিয়ে লগইন হবে
                 return {
                     id: Date.now().toString(),
                     name: credentials.email.split("@")[0],

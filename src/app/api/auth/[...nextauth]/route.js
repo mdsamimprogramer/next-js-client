@@ -16,8 +16,7 @@ const handler = NextAuth({
       },
       async authorize(credentials) {
         if (!credentials.email) throw new Error("Email is required");
-
-        // ✅ যেকোনো ইমেইল দিয়ে লগইন হবে
+        
         return {
           id: Date.now().toString(),
           name: credentials.email.split("@")[0],
