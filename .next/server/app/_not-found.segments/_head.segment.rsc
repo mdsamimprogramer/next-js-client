@@ -1,7 +1,7 @@
 1:"$Sreact.fragment"
-2:I[97367,["/_next/static/chunks/3c21e384179a1a34.js","/_next/static/chunks/a4e9e0150dc77767.js","/_next/static/chunks/247eb132b7f7b574.js"],"ViewportBoundary"]
-4:I[97367,["/_next/static/chunks/3c21e384179a1a34.js","/_next/static/chunks/a4e9e0150dc77767.js","/_next/static/chunks/247eb132b7f7b574.js"],"MetadataBoundary"]
+2:I[97367,["/_next/static/chunks/3c21e384179a1a34.js","/_next/static/chunks/abe9f88e7879659b.js","/_next/static/chunks/247eb132b7f7b574.js"],"ViewportBoundary"]
+4:I[97367,["/_next/static/chunks/3c21e384179a1a34.js","/_next/static/chunks/abe9f88e7879659b.js","/_next/static/chunks/247eb132b7f7b574.js"],"MetadataBoundary"]
 5:"$Sreact.suspense"
-0:{"buildId":"twj37PaRPdLKU8g0s605-","rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"TlaiKFj_sIOFtg70HHP4o","rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":"$@3"}],["$","div",null,{"hidden":true,"children":["$","$L4",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":"$@6"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
 6:[["$","title","0",{"children":"Nature's Platter"}],["$","meta","1",{"name":"description","content":"Next.js App with NextAuth"}]]

@@ -20,16 +20,21 @@ module.exports = mod;
 "[project]/postcss.config.mjs [postcss] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
-__turbopack_context__.s([
+/** @type {import('next').NextConfig} */ __turbopack_context__.s([
     "default",
     ()=>__TURBOPACK__default__export__
 ]);
-const config = {
-    plugins: {
-        "@tailwindcss/postcss": {}
+const nextConfig = {
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: '**.example.com'
+            }
+        ]
     }
 };
-const __TURBOPACK__default__export__ = config;
+const __TURBOPACK__default__export__ = nextConfig;
 }),
 "[turbopack-node]/transforms/transforms.ts [postcss] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
