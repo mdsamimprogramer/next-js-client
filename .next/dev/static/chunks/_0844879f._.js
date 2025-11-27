@@ -7,7 +7,6 @@ __turbopack_context__.s([
     ()=>AddProductPage
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next-auth/react/index.js [app-client] (ecmascript)");
@@ -19,392 +18,225 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-;
 function AddProductPage() {
     _s();
-    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(47);
-    if ($[0] !== "f8f007d95f17bf5080403408865d0c019cdc3df2c8803c0fb4e2670ea35b592d") {
-        for(let $i = 0; $i < 47; $i += 1){
-            $[$i] = Symbol.for("react.memo_cache_sentinel");
-        }
-        $[0] = "f8f007d95f17bf5080403408865d0c019cdc3df2c8803c0fb4e2670ea35b592d";
-    }
-    const { status } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSession"])();
+    const { data: session, status } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSession"])();
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"])();
-    let t0;
-    if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
-        t0 = {
-            title: "",
-            shortDescription: "",
-            fullDescription: "",
-            price: "",
-            date: new Date().toISOString().slice(0, 10),
-            priority: "",
-            image: ""
-        };
-        $[1] = t0;
-    } else {
-        t0 = $[1];
-    }
-    const [form, setForm] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(t0);
-    let t1;
-    let t2;
-    if ($[2] !== router || $[3] !== status) {
-        t1 = ({
-            "AddProductPage[useEffect()]": ()=>{
-                if (status === "unauthenticated") {
-                    router.push("/auth/login");
-                }
+    const [form, setForm] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
+        title: "",
+        shortDescription: "",
+        fullDescription: "",
+        price: "",
+        date: new Date().toISOString().slice(0, 10),
+        priority: "",
+        image: ""
+    });
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "AddProductPage.useEffect": ()=>{
+            if (status === "unauthenticated") {
+                router.push("/auth/login");
             }
-        })["AddProductPage[useEffect()]"];
-        t2 = [
-            status,
-            router
-        ];
-        $[2] = router;
-        $[3] = status;
-        $[4] = t1;
-        $[5] = t2;
-    } else {
-        t1 = $[4];
-        t2 = $[5];
-    }
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t1, t2);
-    let t3;
-    if ($[6] !== form) {
-        t3 = ({
-            "AddProductPage[handleChange]": (e)=>{
-                const { name, value } = e.target;
+        }
+    }["AddProductPage.useEffect"], [
+        status,
+        router
+    ]);
+    const handleChange = (e)=>{
+        const { name, value } = e.target;
+        setForm({
+            ...form,
+            [name]: value
+        });
+    };
+    const handleSubmit = async (e)=>{
+        e.preventDefault();
+        if (!form.title || !form.price) {
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].error("Title and Price are required!");
+            return;
+        }
+        try {
+            const res = await fetch("https://server-sage-gamma.vercel.app/products", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(form)
+            });
+            if (res.ok) {
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].success("Product added successfully!");
                 setForm({
-                    ...form,
-                    [name]: value
+                    title: "",
+                    shortDescription: "",
+                    fullDescription: "",
+                    price: "",
+                    date: new Date().toISOString().slice(0, 10),
+                    priority: "",
+                    image: ""
                 });
+                router.push("/items");
+            } else {
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].error("Failed to add product");
             }
-        })["AddProductPage[handleChange]"];
-        $[6] = form;
-        $[7] = t3;
-    } else {
-        t3 = $[7];
-    }
-    const handleChange = t3;
-    let t4;
-    if ($[8] !== form || $[9] !== router) {
-        t4 = ({
-            "AddProductPage[handleSubmit]": async (e_0)=>{
-                e_0.preventDefault();
-                if (!form.title || !form.price) {
-                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].error("Title and Price are required!");
-                    return;
-                }
-                ;
-                try {
-                    const res = await fetch("https://server-sage-gamma.vercel.app/products", {
-                        method: "POST",
-                        headers: {
-                            "Content-Type": "application/json"
-                        },
-                        body: JSON.stringify(form)
-                    });
-                    if (res.ok) {
-                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].success("Product added successfully!");
-                        setForm({
-                            title: "",
-                            shortDescription: "",
-                            fullDescription: "",
-                            price: "",
-                            date: new Date().toISOString().slice(0, 10),
-                            priority: "",
-                            image: ""
-                        });
-                        router.push("/items");
-                    } else {
-                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].error("Failed to add product");
-                    }
-                } catch (t5) {
-                    const err = t5;
-                    console.error(err);
-                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].error("Something went wrong!");
-                }
-            }
-        })["AddProductPage[handleSubmit]"];
-        $[8] = form;
-        $[9] = router;
-        $[10] = t4;
-    } else {
-        t4 = $[10];
-    }
-    const handleSubmit = t4;
-    if (status === "loading") {
-        let t5;
-        if ($[11] === Symbol.for("react.memo_cache_sentinel")) {
-            t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                children: "Loading..."
+        } catch (err) {
+            console.error(err);
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].error("Something went wrong!");
+        }
+    };
+    if (status === "loading") return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+        children: "Loading..."
+    }, void 0, false, {
+        fileName: "[project]/src/app/dashboard/add-product/page.jsx",
+        lineNumber: 68,
+        columnNumber: 38
+    }, this);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "min-h-screen bg-green-50 flex flex-col items-center py-12 px-4 md:px-0",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Toaster"], {
+                position: "top-right"
             }, void 0, false, {
                 fileName: "[project]/src/app/dashboard/add-product/page.jsx",
-                lineNumber: 126,
-                columnNumber: 12
-            }, this);
-            $[11] = t5;
-        } else {
-            t5 = $[11];
-        }
-        return t5;
-    }
-    let t5;
-    if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
-        t5 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$hot$2d$toast$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Toaster"], {
-            position: "top-right"
-        }, void 0, false, {
-            fileName: "[project]/src/app/dashboard/add-product/page.jsx",
-            lineNumber: 135,
-            columnNumber: 10
-        }, this);
-        $[12] = t5;
-    } else {
-        t5 = $[12];
-    }
-    let t6;
-    if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
-        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-            className: "text-4xl md:text-5xl font-bold mb-8 text-center text-green-800",
-            children: "Add New Product"
-        }, void 0, false, {
-            fileName: "[project]/src/app/dashboard/add-product/page.jsx",
-            lineNumber: 142,
-            columnNumber: 10
-        }, this);
-        $[13] = t6;
-    } else {
-        t6 = $[13];
-    }
-    let t7;
-    if ($[14] !== form.title || $[15] !== handleChange) {
-        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-            type: "text",
-            name: "title",
-            placeholder: "Title *",
-            value: form.title,
-            onChange: handleChange,
-            className: "w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-green-400",
-            required: true
-        }, void 0, false, {
-            fileName: "[project]/src/app/dashboard/add-product/page.jsx",
-            lineNumber: 149,
-            columnNumber: 10
-        }, this);
-        $[14] = form.title;
-        $[15] = handleChange;
-        $[16] = t7;
-    } else {
-        t7 = $[16];
-    }
-    let t8;
-    if ($[17] !== form.shortDescription || $[18] !== handleChange) {
-        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-            type: "text",
-            name: "shortDescription",
-            placeholder: "Short Description",
-            value: form.shortDescription,
-            onChange: handleChange,
-            className: "w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-green-400"
-        }, void 0, false, {
-            fileName: "[project]/src/app/dashboard/add-product/page.jsx",
-            lineNumber: 158,
-            columnNumber: 10
-        }, this);
-        $[17] = form.shortDescription;
-        $[18] = handleChange;
-        $[19] = t8;
-    } else {
-        t8 = $[19];
-    }
-    let t9;
-    if ($[20] !== form.price || $[21] !== handleChange) {
-        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-            type: "number",
-            name: "price",
-            placeholder: "Price *",
-            value: form.price,
-            onChange: handleChange,
-            className: "w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-green-400",
-            required: true
-        }, void 0, false, {
-            fileName: "[project]/src/app/dashboard/add-product/page.jsx",
-            lineNumber: 167,
-            columnNumber: 10
-        }, this);
-        $[20] = form.price;
-        $[21] = handleChange;
-        $[22] = t9;
-    } else {
-        t9 = $[22];
-    }
-    let t10;
-    if ($[23] !== form.priority || $[24] !== handleChange) {
-        t10 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-            type: "number",
-            name: "priority",
-            placeholder: "Priority",
-            value: form.priority,
-            onChange: handleChange,
-            className: "w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-green-400"
-        }, void 0, false, {
-            fileName: "[project]/src/app/dashboard/add-product/page.jsx",
-            lineNumber: 176,
-            columnNumber: 11
-        }, this);
-        $[23] = form.priority;
-        $[24] = handleChange;
-        $[25] = t10;
-    } else {
-        t10 = $[25];
-    }
-    let t11;
-    if ($[26] !== form.date || $[27] !== handleChange) {
-        t11 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-            type: "date",
-            name: "date",
-            value: form.date,
-            onChange: handleChange,
-            className: "w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-green-400"
-        }, void 0, false, {
-            fileName: "[project]/src/app/dashboard/add-product/page.jsx",
-            lineNumber: 185,
-            columnNumber: 11
-        }, this);
-        $[26] = form.date;
-        $[27] = handleChange;
-        $[28] = t11;
-    } else {
-        t11 = $[28];
-    }
-    let t12;
-    if ($[29] !== form.image || $[30] !== handleChange) {
-        t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-            type: "text",
-            name: "image",
-            placeholder: "Image URL (optional)",
-            value: form.image,
-            onChange: handleChange,
-            className: "w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-green-400"
-        }, void 0, false, {
-            fileName: "[project]/src/app/dashboard/add-product/page.jsx",
-            lineNumber: 194,
-            columnNumber: 11
-        }, this);
-        $[29] = form.image;
-        $[30] = handleChange;
-        $[31] = t12;
-    } else {
-        t12 = $[31];
-    }
-    let t13;
-    if ($[32] !== t10 || $[33] !== t11 || $[34] !== t12 || $[35] !== t7 || $[36] !== t8 || $[37] !== t9) {
-        t13 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "grid grid-cols-1 md:grid-cols-2 gap-6",
-            children: [
-                t7,
-                t8,
-                t9,
-                t10,
-                t11,
-                t12
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/app/dashboard/add-product/page.jsx",
-            lineNumber: 203,
-            columnNumber: 11
-        }, this);
-        $[32] = t10;
-        $[33] = t11;
-        $[34] = t12;
-        $[35] = t7;
-        $[36] = t8;
-        $[37] = t9;
-        $[38] = t13;
-    } else {
-        t13 = $[38];
-    }
-    let t14;
-    if ($[39] !== form.fullDescription || $[40] !== handleChange) {
-        t14 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
-            name: "fullDescription",
-            placeholder: "Full Description",
-            value: form.fullDescription,
-            onChange: handleChange,
-            className: "w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-green-400",
-            rows: 5
-        }, void 0, false, {
-            fileName: "[project]/src/app/dashboard/add-product/page.jsx",
-            lineNumber: 216,
-            columnNumber: 11
-        }, this);
-        $[39] = form.fullDescription;
-        $[40] = handleChange;
-        $[41] = t14;
-    } else {
-        t14 = $[41];
-    }
-    let t15;
-    if ($[42] === Symbol.for("react.memo_cache_sentinel")) {
-        t15 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-            type: "submit",
-            className: "w-full py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition",
-            children: "Submit"
-        }, void 0, false, {
-            fileName: "[project]/src/app/dashboard/add-product/page.jsx",
-            lineNumber: 225,
-            columnNumber: 11
-        }, this);
-        $[42] = t15;
-    } else {
-        t15 = $[42];
-    }
-    let t16;
-    if ($[43] !== handleSubmit || $[44] !== t13 || $[45] !== t14) {
-        t16 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "min-h-screen bg-green-50 flex flex-col items-center py-12 px-4 md:px-0",
-            children: [
-                t5,
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "w-full max-w-4xl",
-                    children: [
-                        t6,
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
-                            onSubmit: handleSubmit,
-                            className: "bg-white p-8 rounded-lg shadow-md space-y-6",
-                            children: [
-                                t13,
-                                t14,
-                                t15
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/app/dashboard/add-product/page.jsx",
-                            lineNumber: 232,
-                            columnNumber: 141
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/app/dashboard/add-product/page.jsx",
-                    lineNumber: 232,
-                    columnNumber: 103
-                }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/src/app/dashboard/add-product/page.jsx",
-            lineNumber: 232,
-            columnNumber: 11
-        }, this);
-        $[43] = handleSubmit;
-        $[44] = t13;
-        $[45] = t14;
-        $[46] = t16;
-    } else {
-        t16 = $[46];
-    }
-    return t16;
+                lineNumber: 72,
+                columnNumber: 13
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "w-full max-w-4xl",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                        className: "text-4xl md:text-5xl font-bold mb-8 text-center text-green-800",
+                        children: "Add New Product"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/dashboard/add-product/page.jsx",
+                        lineNumber: 74,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
+                        onSubmit: handleSubmit,
+                        className: "bg-white p-8 rounded-lg shadow-md space-y-6",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "grid grid-cols-1 md:grid-cols-2 gap-6",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "text",
+                                        name: "title",
+                                        placeholder: "Title *",
+                                        value: form.title,
+                                        onChange: handleChange,
+                                        className: "w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-green-400",
+                                        required: true
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/dashboard/add-product/page.jsx",
+                                        lineNumber: 83,
+                                        columnNumber: 25
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "text",
+                                        name: "shortDescription",
+                                        placeholder: "Short Description",
+                                        value: form.shortDescription,
+                                        onChange: handleChange,
+                                        className: "w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-green-400"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/dashboard/add-product/page.jsx",
+                                        lineNumber: 92,
+                                        columnNumber: 25
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "number",
+                                        name: "price",
+                                        placeholder: "Price *",
+                                        value: form.price,
+                                        onChange: handleChange,
+                                        className: "w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-green-400",
+                                        required: true
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/dashboard/add-product/page.jsx",
+                                        lineNumber: 100,
+                                        columnNumber: 25
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "number",
+                                        name: "priority",
+                                        placeholder: "Priority",
+                                        value: form.priority,
+                                        onChange: handleChange,
+                                        className: "w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-green-400"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/dashboard/add-product/page.jsx",
+                                        lineNumber: 109,
+                                        columnNumber: 25
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "date",
+                                        name: "date",
+                                        value: form.date,
+                                        onChange: handleChange,
+                                        className: "w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-green-400"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/dashboard/add-product/page.jsx",
+                                        lineNumber: 117,
+                                        columnNumber: 25
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "text",
+                                        name: "image",
+                                        placeholder: "Image URL (optional)",
+                                        value: form.image,
+                                        onChange: handleChange,
+                                        className: "w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-green-400"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/dashboard/add-product/page.jsx",
+                                        lineNumber: 124,
+                                        columnNumber: 25
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/app/dashboard/add-product/page.jsx",
+                                lineNumber: 82,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
+                                name: "fullDescription",
+                                placeholder: "Full Description",
+                                value: form.fullDescription,
+                                onChange: handleChange,
+                                className: "w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-green-400",
+                                rows: 5
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/dashboard/add-product/page.jsx",
+                                lineNumber: 134,
+                                columnNumber: 21
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                type: "submit",
+                                className: "w-full py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition",
+                                children: "Submit"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/dashboard/add-product/page.jsx",
+                                lineNumber: 143,
+                                columnNumber: 21
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/app/dashboard/add-product/page.jsx",
+                        lineNumber: 78,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/dashboard/add-product/page.jsx",
+                lineNumber: 73,
+                columnNumber: 13
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/app/dashboard/add-product/page.jsx",
+        lineNumber: 71,
+        columnNumber: 9
+    }, this);
 }
-_s(AddProductPage, "/qS1mSdv5q132tE9VtzEdqp4Mng=", false, function() {
+_s(AddProductPage, "lJxJD9Yktp0LxhUgb+P+CnQWF/w=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSession"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]

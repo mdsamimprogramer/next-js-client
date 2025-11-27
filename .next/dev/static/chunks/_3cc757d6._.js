@@ -35,10 +35,10 @@ function ManageProductsPage() {
         }
     }["ManageProductsPage.useEffect"], []);
     const handleDelete = async (id)=>{
-        const res_0 = await fetch(`https://server-sage-gamma.vercel.app/products/${id}`, {
+        const res = await fetch(`https://server-sage-gamma.vercel.app/products/${id}`, {
             method: "DELETE"
         });
-        if (res_0.ok) setProducts(products.filter((p)=>p._id !== id));
+        if (res.ok) setProducts(products.filter((p)=>p._id !== id));
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "px-4 md:px-20 py-12",
@@ -48,39 +48,39 @@ function ManageProductsPage() {
                 children: "Manage Products"
             }, void 0, false, {
                 fileName: "[project]/src/app/dashboard/manage-products/page.jsx",
-                lineNumber: 26,
+                lineNumber: 30,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "grid md:grid-cols-2 lg:grid-cols-3 gap-6",
-                children: products.map((p_0)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: products.map((p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "bg-white p-4 rounded shadow flex flex-col justify-between",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                 className: "font-semibold mb-2",
-                                children: p_0.title
+                                children: p.title
                             }, void 0, false, {
                                 fileName: "[project]/src/app/dashboard/manage-products/page.jsx",
-                                lineNumber: 29,
+                                lineNumber: 34,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-green-700 mb-2 line-clamp-2",
-                                children: p_0.shortDescription
+                                children: p.shortDescription
                             }, void 0, false, {
                                 fileName: "[project]/src/app/dashboard/manage-products/page.jsx",
-                                lineNumber: 30,
+                                lineNumber: 35,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-green-900 font-semibold mb-4",
                                 children: [
                                     "$",
-                                    p_0.price
+                                    p.price
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/dashboard/manage-products/page.jsx",
-                                lineNumber: 31,
+                                lineNumber: 36,
                                 columnNumber: 25
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -88,47 +88,47 @@ function ManageProductsPage() {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         className: "flex-1 py-1 bg-green-600 text-white rounded hover:bg-green-700",
-                                        onClick: ()=>router.push(`/items/${p_0._id}`),
+                                        onClick: ()=>router.push(`/items/${p._id}`),
                                         children: "View"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/dashboard/manage-products/page.jsx",
-                                        lineNumber: 33,
+                                        lineNumber: 38,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                         className: "flex-1 py-1 bg-red-600 text-white rounded hover:bg-red-700",
-                                        onClick: ()=>handleDelete(p_0._id),
+                                        onClick: ()=>handleDelete(p._id),
                                         children: "Delete"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/dashboard/manage-products/page.jsx",
-                                        lineNumber: 36,
+                                        lineNumber: 44,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/dashboard/manage-products/page.jsx",
-                                lineNumber: 32,
+                                lineNumber: 37,
                                 columnNumber: 25
                             }, this)
                         ]
-                    }, p_0._id, true, {
+                    }, p._id, true, {
                         fileName: "[project]/src/app/dashboard/manage-products/page.jsx",
-                        lineNumber: 28,
-                        columnNumber: 38
+                        lineNumber: 33,
+                        columnNumber: 21
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/src/app/dashboard/manage-products/page.jsx",
-                lineNumber: 27,
+                lineNumber: 31,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/dashboard/manage-products/page.jsx",
-        lineNumber: 25,
-        columnNumber: 10
+        lineNumber: 29,
+        columnNumber: 9
     }, this);
 }
-_s(ManageProductsPage, "RJ6Rx4o0aOcZYRJMFyM7T1qi5Ec=", false, function() {
+_s(ManageProductsPage, "9Gg62SWn08VEwbD8BomFrLF6VLw=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2d$auth$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSession"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRouter"]
