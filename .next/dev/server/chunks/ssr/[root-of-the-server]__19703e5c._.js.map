@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 14, "column": 0}, "map": {"version":3,"sources":["file:///C:/Projects/my-first-next-js/src/app/page.jsx"],"sourcesContent":["import Link from \"next/link\";\n\nexport default function HomePage() {\n  return (\n    <div>\n      <h1>Home Page</h1>\n      <Link href=\"/login\">Login</Link> |{\" \"}\n      <Link href=\"/protected\">Protected Page</Link>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,8OAAC;;0BACC,8OAAC;0BAAG;;;;;;0BACJ,8OAAC,0LAAI;gBAAC,MAAK;0BAAS;;;;;;YAAY;YAAG;0BACnC,8OAAC,0LAAI;gBAAC,MAAK;0BAAa;;;;;;;;;;;;AAG9B"}}]
+}

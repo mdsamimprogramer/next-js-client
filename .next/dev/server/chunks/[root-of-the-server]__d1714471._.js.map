@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 46, "column": 0}, "map": {"version":3,"sources":["file:///C:/Projects/my-first-next-js/src/proxy.js"],"sourcesContent":["import { NextResponse } from \"next/server\";\r\n\r\n// This function can be marked `async` if using `await` inside\r\nexport function proxy(request) {\r\n  const user = true;\r\n  if (!user) {\r\n    return NextResponse.redirect(new URL(\"/\", request.url));\r\n  }\r\n}\r\n\r\n// Alternatively, you can use a default export:\r\n// export default function proxy(request: NextRequest) { ... }\r\n\r\n// See \"Matching Paths\" below to learn more\r\nexport const config = {\r\n  matcher: \"/dashboard/:path*\",\r\n};\r\n"],"names":[],"mappings":";;;;;;AAAA;;AAGO,SAAS,MAAM,OAAO;IAC3B,MAAM,OAAO;IACb;;AAGF;AAMO,MAAM,SAAS;IACpB,SAAS;AACX"}}]
+}

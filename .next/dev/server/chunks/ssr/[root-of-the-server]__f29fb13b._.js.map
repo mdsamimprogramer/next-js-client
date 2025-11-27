@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 10, "column": 0}, "map": {"version":3,"sources":["file:///C:/Projects/my-first-next-js/src/app/layout.js"],"sourcesContent":["\"use client\"; // MUST be at the top if you use hooks\n\nimport { useSession, signOut } from \"next-auth/react\";\nimport Link from \"next/link\";\n\nexport default function Navbar() {\n  const { data: session } = useSession(); // Hook usage\n\n  return (\n    <nav className=\"p-4 bg-green-600 text-white flex justify-between\">\n      <Link href=\"/\">Home</Link>\n      <div>\n        {session ? (\n          <>\n            <span>{session.user.name}</span>\n            <button onClick={() => signOut()}>Sign Out</button>\n          </>\n        ) : (\n          <Link href=\"/auth/login\">Login</Link>\n        )}\n      </div>\n    </nav>\n  );\n}\n"],"names":[],"mappings":";;;;;AAEA;AACA;AAHA,cAAc,sCAAsC;;;;AAKrC,SAAS;IACtB,MAAM,EAAE,MAAM,OAAO,EAAE,GAAG,IAAA,4JAAU,KAAI,aAAa;IAErD,qBACE,8OAAC;QAAI,WAAU;;0BACb,8OAAC,uKAAI;gBAAC,MAAK;0BAAI;;;;;;0BACf,8OAAC;0BACE,wBACC;;sCACE,8OAAC;sCAAM,QAAQ,IAAI,CAAC,IAAI;;;;;;sCACxB,8OAAC;4BAAO,SAAS,IAAM,IAAA,yJAAO;sCAAI;;;;;;;iDAGpC,8OAAC,uKAAI;oBAAC,MAAK;8BAAc;;;;;;;;;;;;;;;;;AAKnC"}}]
+}

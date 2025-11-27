@@ -1,0 +1,12 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/auth/[...nextauth]/route": "/api/auth/[...nextauth]",
+  "/auth/login/page": "/auth/login",
+  "/auth/register/page": "/auth/register",
+  "/dashboard/add-product/page": "/dashboard/add-product",
+  "/dashboard/manage-products/page": "/dashboard/manage-products",
+  "/items/[id]/page": "/items/[id]",
+  "/items/page": "/items",
+  "/page": "/"
+}
