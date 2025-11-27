@@ -21,11 +21,11 @@ var _s = __turbopack_context__.k.signature();
 function ItemsPage() {
     _s();
     const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(50);
-    if ($[0] !== "6f17e8fc7f10fc66cb29e82af23f210e323ca75a04f194afa33ec6192125f10c") {
+    if ($[0] !== "6bba3ef7629c9ebd83dc119208879595e9427b6701f3bdd838ecb0c030fff9c1") {
         for(let $i = 0; $i < 50; $i += 1){
             $[$i] = Symbol.for("react.memo_cache_sentinel");
         }
-        $[0] = "6f17e8fc7f10fc66cb29e82af23f210e323ca75a04f194afa33ec6192125f10c";
+        $[0] = "6bba3ef7629c9ebd83dc119208879595e9427b6701f3bdd838ecb0c030fff9c1";
     }
     let t0;
     if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
@@ -44,7 +44,7 @@ function ItemsPage() {
     if ($[2] === Symbol.for("react.memo_cache_sentinel")) {
         t1 = ({
             "ItemsPage[useEffect()]": ()=>{
-                fetch("http://localhost:5000/products").then(_ItemsPageUseEffectAnonymous).then({
+                fetch("https://server-sage-gamma.vercel.app/products").then(_ItemsPageUseEffectAnonymous).then({
                     "ItemsPage[useEffect() > (anonymous)()]": (data)=>setProducts(data)
                 }["ItemsPage[useEffect() > (anonymous)()]"]).catch(_ItemsPageUseEffectAnonymous2).finally({
                     "ItemsPage[useEffect() > (anonymous)()]": ()=>setLoading(false)

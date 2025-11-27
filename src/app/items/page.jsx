@@ -12,7 +12,7 @@ export default function ItemsPage() {
     const router = useRouter();
 
     useEffect(() => {
-        fetch("http://localhost:5000/products")
+        fetch("https://server-sage-gamma.vercel.app/products")
             .then((res) => res.json())
             .then((data) => setProducts(data))
             .catch((err) => console.error(err))

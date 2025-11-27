@@ -15,13 +15,13 @@ export default function ManageProductsPage() {
     }
 
     useEffect(() => {
-        fetch("http://localhost:5000/products")
+        fetch("https://server-sage-gamma.vercel.app/products")
             .then(res => res.json())
             .then(data => setProducts(data));
     }, []);
 
     const handleDelete = async (id) => {
-        const res = await fetch(`http://localhost:5000/products/${id}`, { method: "DELETE" });
+        const res = await fetch(`https://server-sage-gamma.vercel.app/products/${id}`, { method: "DELETE" });
         if (res.ok) setProducts(products.filter(p => p._id !== id));
     };
 
