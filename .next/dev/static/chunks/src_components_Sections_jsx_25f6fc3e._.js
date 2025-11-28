@@ -22,7 +22,7 @@ function Sections() {
                         children: "Our Features"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Sections.jsx",
-                        lineNumber: 11,
+                        lineNumber: 10,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -54,7 +54,7 @@ function Sections() {
                                         className: "mx-auto mb-4"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Sections.jsx",
-                                        lineNumber: 22,
+                                        lineNumber: 21,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -62,7 +62,7 @@ function Sections() {
                                         children: feature.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Sections.jsx",
-                                        lineNumber: 23,
+                                        lineNumber: 22,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -70,24 +70,24 @@ function Sections() {
                                         children: feature.desc
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Sections.jsx",
-                                        lineNumber: 24,
+                                        lineNumber: 23,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, feature.title, true, {
                                 fileName: "[project]/src/components/Sections.jsx",
-                                lineNumber: 18,
+                                lineNumber: 17,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/Sections.jsx",
-                        lineNumber: 12,
+                        lineNumber: 11,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Sections.jsx",
-                lineNumber: 10,
+                lineNumber: 9,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -97,7 +97,7 @@ function Sections() {
                         children: "Our Items"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Sections.jsx",
-                        lineNumber: 32,
+                        lineNumber: 31,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -134,7 +134,7 @@ function Sections() {
                                         className: "w-full h-48 object-cover"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Sections.jsx",
-                                        lineNumber: 44,
+                                        lineNumber: 43,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -145,7 +145,7 @@ function Sections() {
                                                 children: item.name
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Sections.jsx",
-                                                lineNumber: 46,
+                                                lineNumber: 45,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -153,30 +153,30 @@ function Sections() {
                                                 children: item.price
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Sections.jsx",
-                                                lineNumber: 47,
+                                                lineNumber: 46,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Sections.jsx",
-                                        lineNumber: 45,
+                                        lineNumber: 44,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, item.name, true, {
                                 fileName: "[project]/src/components/Sections.jsx",
-                                lineNumber: 40,
+                                lineNumber: 39,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/Sections.jsx",
-                        lineNumber: 33,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Sections.jsx",
-                lineNumber: 31,
+                lineNumber: 30,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -187,7 +187,7 @@ function Sections() {
                         children: "Testimonials"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Sections.jsx",
-                        lineNumber: 56,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -219,7 +219,7 @@ function Sections() {
                                         className: "mx-auto mb-4 rounded-full"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Sections.jsx",
-                                        lineNumber: 67,
+                                        lineNumber: 66,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -231,7 +231,7 @@ function Sections() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Sections.jsx",
-                                        lineNumber: 68,
+                                        lineNumber: 67,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -239,24 +239,24 @@ function Sections() {
                                         children: testimonial.name
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Sections.jsx",
-                                        lineNumber: 69,
+                                        lineNumber: 68,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, testimonial.name, true, {
                                 fileName: "[project]/src/components/Sections.jsx",
-                                lineNumber: 63,
+                                lineNumber: 62,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/Sections.jsx",
-                        lineNumber: 57,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Sections.jsx",
-                lineNumber: 55,
+                lineNumber: 54,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -270,7 +270,7 @@ function Sections() {
                         className: "w-full h-64 md:h-96 object-cover opacity-80"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Sections.jsx",
-                        lineNumber: 77,
+                        lineNumber: 76,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -281,7 +281,7 @@ function Sections() {
                                 children: "Get Fresh Today!"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Sections.jsx",
-                                lineNumber: 79,
+                                lineNumber: 78,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -289,34 +289,34 @@ function Sections() {
                                 children: "Order your organic products online now."
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Sections.jsx",
-                                lineNumber: 80,
+                                lineNumber: 79,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                 href: "/items",
-                                className: "px-8 py-4 bg-white text-green-600 rounded-full font-semibold hover:bg-gray-100 transition",
+                                className: "px-8 py-3 bg-white text-green-600 rounded-full font-semibold hover:bg-gray-300 transition",
                                 children: "Shop Now"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Sections.jsx",
-                                lineNumber: 81,
+                                lineNumber: 80,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Sections.jsx",
-                        lineNumber: 78,
+                        lineNumber: 77,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Sections.jsx",
-                lineNumber: 76,
+                lineNumber: 75,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Sections.jsx",
-        lineNumber: 7,
+        lineNumber: 6,
         columnNumber: 5
     }, this);
 }

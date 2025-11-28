@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 
 export default function Sections() {
@@ -78,7 +77,7 @@ export default function Sections() {
         <div className="absolute inset-0 flex flex-col items-center justify-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Get Fresh Today!</h2>
           <p className="mb-6 text-lg md:text-xl text-fuchsia-800">Order your organic products online now.</p>
-          <a href="/items" className="px-8 py-4 bg-white text-green-600 rounded-full font-semibold hover:bg-gray-100 transition">
+          <a href="/items" className="px-8 py-3 bg-white text-green-600 rounded-full font-semibold hover:bg-gray-300 transition">
             Shop Now
           </a>
         </div>

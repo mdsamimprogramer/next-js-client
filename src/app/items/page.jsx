@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import { FourSquare } from "react-loading-indicators";
 
 export default function ItemsPage() {
     const [products, setProducts] = useState([]);
@@ -32,10 +33,10 @@ export default function ItemsPage() {
     return (
         <div className="px-4 mx-auto justify-center text-center md:px-20 py-12 min-h-screen">
             <h1 className="text-4xl font-bold text-green-800 mb-2">Our Items</h1>
-            <p className="mb-6 text-green-700">Browse our selection of fresh products</p>
+            <p className="mb-6 text-red-400 font-semibold text-balance">Browse our selection of fresh products</p>
 
             {/* Search & Category Filter */}
-            <div className="flex mx-auto justify-center text-center flex-col md:flex-row gap-4 mb-6">
+            <div className="flex text-black mx-auto justify-center text-center flex-col md:flex-row gap-4 mb-6">
                 <input
                     type="text"
                     placeholder="Search items..."
@@ -58,7 +59,10 @@ export default function ItemsPage() {
             </div>
 
             {/* Loading / Empty State */}
-            {loading && <p className="text-green-800">Loading products...</p>}
+            {loading && <div className="flex justify-center items-center min-h-screen">
+                <FourSquare color="#ac1ce1" size="medium" text="" textColor="" />
+            </div>
+}
             {!loading && filteredProducts.length === 0 && (
                 <p className="text-green-800">No products found.</p>
             )}
@@ -84,17 +88,18 @@ export default function ItemsPage() {
                                 />
                             </div>
                             <div className="p-4">
-                                <h3 className="text-lg font-semibold mb-1">{item.title}</h3>
+                                <h3 className="text-lg text-gray-400 font-semibold mb-1">{item.title}</h3>
                                 <p className="text-green-700 text-sm mb-2 line-clamp-2">
                                     {item.shortDescription}
                                 </p>
                                 <p className="text-green-900 font-semibold mb-3">${item.price}</p>
                                 <button
-                                    className="w-full py-2 bg-green-600 text-white rounded hover:bg-green-700 transition"
+                                    className="w-full py-2 bg-gradient-to-r from-red-600 to-orange-400 text-white rounded hover:from-green-700 hover:to-green-500 transition"
                                     onClick={() => router.push(`/items/${item._id}`)}
                                 >
                                     Details
                                 </button>
+
                             </div>
                         </div>
                     ))}

@@ -2,20 +2,25 @@
 import Link from "next/link";
 import { useState } from "react";
 import { useSession, signOut } from "next-auth/react";
+import { IoLogoSlack } from "react-icons/io5";
 
 export default function Navbar() {
     const { data: session } = useSession();
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <nav className="bg-green-600 text-white sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
+        <nav className="bg-gray-600 text-white sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
             {/* Logo */}
-            <div className="text-2xl font-bold">Natures Platter</div>
+            <div className="text-2xl font-bold flex gap-2 items-center">
+                <IoLogoSlack className="text-3xl" />
+                <span className="hidden md:inline"><span className="text-red-400">Natures</span> <span className="font-mono">Platter</span></span>
+            </div>
+
 
             {/* Desktop Links */}
             <div className="space-x-6 hidden md:flex">
-                <Link href="/">Home</Link>
-                <Link href="/items">Items</Link>
+                <Link className="hover:font-semibold" href="/">Home</Link>
+                <Link className="hover:font-semibold" href="/items">Items</Link>
             </div>
 
             {/* Right section */}
@@ -26,8 +31,8 @@ export default function Navbar() {
                     </Link>
                 ) : (
                     <div className="relative group">
-                        <button className="px-3 py-1 bg-white text-green-600 rounded hover:bg-gray-200">
-                            {session.user.name} Dashboard
+                        <button className="px-3 py-1 bg-white rounded text-black hover:bg-gray-200">
+                            {session.user.name} <span className="font-semibold text-red-400">Dashboard</span>
                         </button>
                         <div className="absolute right-0 hidden group-hover:block bg-white shadow rounded mt-1 w-48 text-green-600">
                             <Link href="/dashboard/add-product" className="block px-4 py-2 hover:bg-gray-100">Add Product</Link>

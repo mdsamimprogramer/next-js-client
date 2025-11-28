@@ -1,7 +1,6 @@
 export default function Hero() {
   return (
     <section className="relative">
-      {/* Optional background image */}
       <div className="absolute inset-0">
         <img src="/take-care.jpg" className="w-full h-full object-cover opacity-70"/>
       </div>
@@ -10,10 +9,10 @@ export default function Hero() {
         <h1 className="text-4xl md:text-6xl font-extrabold mb-4 text-green-800">
           Welcome to Natures Platter
         </h1>
-        <p className="text-lg md:text-2xl mb-8 text-green-700">
+        <p className="text-lg md:text-2xl mb-8 text-red-400">
           Fresh, organic, and healthy products delivered to your door
         </p>
-        <a href="/items" className="inline-block px-8 py-4 bg-green-600 text-white rounded-full font-semibold hover:bg-green-700 transition" >
+        <a href="/items" className="inline-block px-8 py-2.5 bg-green-600 text-white rounded-full font-semibold hover:text-red-400 hover:bg-green-700 transition" >
           Browse Items
         </a>
       </div>

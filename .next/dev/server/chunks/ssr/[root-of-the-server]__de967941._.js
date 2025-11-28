@@ -29,12 +29,12 @@ function Hero() {
                     className: "w-full h-full object-cover opacity-70"
                 }, void 0, false, {
                     fileName: "[project]/src/components/Hero.jsx",
-                    lineNumber: 6,
+                    lineNumber: 5,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Hero.jsx",
-                lineNumber: 5,
+                lineNumber: 4,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -45,30 +45,30 @@ function Hero() {
                         children: "Welcome to Natures Platter"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Hero.jsx",
-                        lineNumber: 10,
+                        lineNumber: 9,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-lg md:text-2xl mb-8 text-green-700",
+                        className: "text-lg md:text-2xl mb-8 text-red-400",
                         children: "Fresh, organic, and healthy products delivered to your door"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Hero.jsx",
-                        lineNumber: 13,
+                        lineNumber: 12,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                         href: "/items",
-                        className: "inline-block px-8 py-4 bg-green-600 text-white rounded-full font-semibold hover:bg-green-700 transition",
+                        className: "inline-block px-8 py-2.5 bg-green-600 text-white rounded-full font-semibold hover:text-red-400 hover:bg-green-700 transition",
                         children: "Browse Items"
                     }, void 0, false, {
                         fileName: "[project]/src/components/Hero.jsx",
-                        lineNumber: 16,
+                        lineNumber: 15,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Hero.jsx",
-                lineNumber: 9,
+                lineNumber: 8,
                 columnNumber: 7
             }, this)
         ]

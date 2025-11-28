@@ -55,7 +55,9 @@ export default function AddProductPage() {
                     priority: "",
                     image: "",
                 });
-                router.push("/items");
+                setTimeout(() => {
+                    router.push("/items");
+                }, 1500);
             } else {
                 toast.error("Failed to add product");
             }
@@ -77,7 +79,7 @@ export default function AddProductPage() {
 
                 <form
                     onSubmit={handleSubmit}
-                    className="bg-white p-8 rounded-lg shadow-md space-y-6"
+                    className="bg-white p-8 text-gray-500 rounded-lg shadow-md space-y-6"
                 >
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <input
